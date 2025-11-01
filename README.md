@@ -79,7 +79,11 @@ pip install -r requirements.txt
 
 ### 3. Configuration
 Dataset
+
 Place your CSV at data/df_final.csv or update the path in the code.
+
 Bot Token
+
 Edit the following line in main.ipynb (or the generated script):
+
 TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE"
