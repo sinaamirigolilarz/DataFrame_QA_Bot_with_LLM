@@ -93,4 +93,4 @@ TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE"
 
 | | | |
 |------|------|------|
-| ![صفحه اصلی](Screenshots/1.JPG) | ![فرم ورود](Screenshots/2.JPG) | ![داشبورد](Screenshots/3.JPG) |
+| ![نمونه1](Screenshots/1.JPG) | ![نمونه1 ](Screenshots/2.JPG) | ![نمونه1](Screenshots/3.JPG) |
