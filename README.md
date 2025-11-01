@@ -90,4 +90,7 @@ TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE"
 
 ---
 ## Result
-![result 1](Screenshots/1.JPG)
+
+| | | |
+|------|------|------|
+| ![صفحه اصلی](Screenshots/1.JPG) | ![فرم ورود](Screenshots/2.JPG) | ![داشبورد](Screenshots/3.JPG) |
