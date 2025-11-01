@@ -1,98 +1,81 @@
 # DataFrame Q&A Bot with LLM
-**ربات تلگرام هوشمند برای تحلیل داده با Pandas و Mistral-7B-Instruct-v0.3
+**Intelligent Telegram Bot for Data Analysis with Pandas & Mistral-7B-Instruct-v0.3**
 
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
+
 [![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-2CA5E0?logo=telegram)](https://core.telegram.org/bots)
+
 [![Mistral-7B](https://img.shields.io/badge/Model-Mistral--7B--Instruct-green)](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
-## معرفی پروژه
+## Project Overview
 
-این پروژه یک **ربات تلگرام هوشمند** است که به کاربران اجازه می‌دهد با **زبان طبیعی (فارسی)** سوالاتی درباره یک دیتاست بپرسند و ربات به صورت خودکار:
+This project is an **intelligent Telegram bot** that lets users ask **natural-language questions in Persian** about a dataset. The bot automatically:
 
-1. کد **Pandas** معتبر تولید کند  
-2. کد را در محیط ایمن اجرا کند  
-3. نتیجه را به صورت خوانا و با قالب‌بندی مناسب برگرداند  
+1. Generates **valid Pandas code**  
+2. Executes the code in a **secure sandbox**  
+3. Returns the result in a clean, nicely formatted response  
 
-> مثال:  
-> کاربر: `چند نفر دیپلم دارند و متاهل هستند؟`  
-> ربات:  
+> **Example**  
+> User: `How many people have a diploma and are married?`  
+> Bot:  
 > ```python
 > df[(df['Educations'] == 'Diploma') & (df['Marriage'] == 'Married')].shape[0]
 > ```  
-> نتیجه: `127`
+> Result: `127`
 
 ---
 
-## ویژگی‌های کلیدی
+## Key Features
 
-| ویژگی | توضیح |
-|------|-------|
-| **تحلیل با زبان طبیعی** | پشتیبانی کامل از سوالات فارسی |
-| **مدل هوش مصنوعی محلی** | استفاده از `Mistral-7B-Instruct-v0.3` (بدون نیاز به API خارجی) |
-| **اجرای امن کد** | محدودسازی دسترسی با `eval`/`exec` ایمن |
-| **پشتیبانی از GPU/CPU** | بهینه برای Colab، سرور، یا سیستم شخصی |
-| **خروجی تمیز در Markdown** | نمایش سوال، کد، و نتیجه به صورت حرفه‌ای |
-| **قابل تنظیم برای هر دیتاست** | فقط کافیست فایل CSV را تغییر دهید |
+| Feature | Description |
+|--------|-------------|
+| **Natural-Language Analysis** | Full support for Persian questions |
+| **Local AI Model** | Uses `Mistral-7B-Instruct-v0.3` (no external API required) |
+| **Secure Code Execution** | Restricted `eval`/`exec` with sandboxing |
+| **GPU / CPU Support** | Optimized for Colab, servers, or personal machines |
+| **Clean Markdown Output** | Shows question, generated code, and result professionally |
+| **Works with Any Dataset** | Just replace the CSV file |
 
 ---
 
-## ساختار پروژه
+## Project Structure
 .
-├── main.ipynb                  # کد اصلی (Jupyter Notebook)
-├── requirements.txt            # وابستگی‌ها
+├── main.ipynb                  # Main Jupyter Notebook
+├── requirements.txt            # Python dependencies
 ├── data/
-│   └── df_final.csv            # دیتاست نمونه (قابل جایگزینی)
-└── README.md                   # این فایل
+│   └── df_final.csv            # Sample dataset (replaceable)
+└── README.md                   # This file
 
 
 ---
 
-## پیش‌نیازها
+## Requirements
 
-- Python 3.9 یا بالاتر
-- دسترسی به GPU (توصیه شده: T4 یا بالاتر)
-- توکن ربات تلگرام از [@BotFather](https://t.me/BotFather)
+- Python 3.9 or higher  
+- GPU recommended (T4 or better)  
+- Telegram Bot Token from [@BotFather](https://t.me/BotFather)
 
 ---
 
-## نصب و راه‌اندازی
+## Installation & Setup
 
-### 1. کلون کردن پروژه
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/pandas-ai-telegram-bot.git
-cd pandas-ai-telegram-bot
+git clone https://github.com/sinaamirigolilarz/DataFrame_QA_Bot_with_LLM.git
+cd DataFrame_QA_Bot_with_LLM
 
-2. نصب وابستگی‌ها
+2. Install Dependencies
 
 pip install -r requirements.txt
 
-3. تنظیمات
-
-دیتاست خود را قرار دهید
-فایل CSV را در مسیر data/df_final.csv قرار دهید یا مسیر را در کد تغییر دهید.
-
-توکن ربات را وارد کنید
-در فایل main.ipynb یا اسکریپت، خط زیر را ویرایش کنید:
-
+3. Configuration
+Dataset
+Place your CSV at data/df_final.csv or update the path in the code.
+Bot Token
+Edit the following line in main.ipynb (or the generated script):
 TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE"
-
-معماری سیستم
-graph TD
-    A[کاربر در تلگرام] --> B(ربات تلگرام)
-    B --> C{سوال فارسی}
-    C --> D[Mistral-7B]
-    D --> E[تولید کد Pandas]
-    E --> F[SafeExecutor]
-    F --> G[اجرای کد روی df]
-    G --> H[نتیجه]
-    H --> I[پاسخ Markdown به کاربر]
-
-
-ستاره بدهید اگر مفید بود! 🌟
-اگر این پروژه به شما کمک کرد، لطفاً یک ستاره در گیت‌هاب بزنید تا دیگران هم پیدایش کنند.
-
-
