@@ -1,0 +1,7 @@
+﻿Sex,isactive,Children,Educations,Age,Position,BirthPlace,InsuranceMonth,Marriage,Height,Unit,Horoscope,gender_retention_rate,education_retention_rate,age_group_retention_rate
+Male,0,0,Elementary,15,Ring,Qom,0,Married,181,Production,Esfand,32.32405892,17.67241379,34.40443213
+Female,0,0,Diploma,34,Ring,Qom,0,Married,164,Production,Shahrivar,38.27993255,36.96275072,33.28748281
+Female,0,0,Elementary,34,Ring,Qom,0,Married,164,Production,Shahrivar,38.27993255,17.67241379,33.28748281
+Male,0,0,Diploma,34,Maintenance and Repairs,Qom,0,Married,174,Production,Shahrivar,32.32405892,36.96275072,33.28748281
+Male,1,3,Elementary,41,Security,Qom,29,Married,169,Production,Mordad,32.32405892,17.67241379,36.50485437
+Male,1,2,PostDiploma,39,Ring,Kohgiluyeh and Boyer Ahmad,0,Married,176,Production,Mehr,32.32405892,39.78494624,36.50485437
