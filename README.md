@@ -45,13 +45,14 @@ This project is an **intelligent Telegram bot** that lets users ask **natural-la
 ---
 
 ## Project Structure
+
+```bash
 .
 ├── main.ipynb                  # Main Jupyter Notebook
 ├── requirements.txt            # Python dependencies
 ├── data/
 │   └── df_final.csv            # Sample dataset (replaceable)
 └── README.md                   # This file
-
 
 ---
 
