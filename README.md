@@ -70,12 +70,14 @@ This project is an **intelligent Telegram bot** that lets users ask **natural-la
 ```bash
 git clone https://github.com/sinaamirigolilarz/DataFrame_QA_Bot_with_LLM.git
 cd DataFrame_QA_Bot_with_LLM
+```
 
-2. Install Dependencies
-
+### 2. Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-3. Configuration
+### 3. Configuration
 Dataset
 Place your CSV at data/df_final.csv or update the path in the code.
 Bot Token
