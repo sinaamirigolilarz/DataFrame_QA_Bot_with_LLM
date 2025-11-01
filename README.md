@@ -1,13 +1,14 @@
 # DataFrame Q&A Bot with LLM
 **Intelligent Telegram Bot for Data Analysis with Pandas & Mistral-7B-Instruct-v0.3**
 
+<div align="center">
+
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
-
 [![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-2CA5E0?logo=telegram)](https://core.telegram.org/bots)
-
 [![Mistral-7B](https://img.shields.io/badge/Model-Mistral--7B--Instruct-green)](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+</div>
 
 ---
 
