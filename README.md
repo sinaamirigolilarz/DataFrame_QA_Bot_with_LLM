@@ -8,7 +8,6 @@
 [![Mistral-7B](https://img.shields.io/badge/Model-Mistral--7B--Instruct-green)](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
 [![GitHub stars](https://img.shields.io/github/stars/sinaamirigolilarz/DataFrame_QA_Bot_with_LLM?style=social)](https://github.com/sinaamirigolilarz/DataFrame_QA_Bot_with_LLM/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/sinaamirigolilarz/DataFrame_QA_Bot_with_LLM?style=social)](https://github.com/sinaamirigolilarz/DataFrame_QA_Bot_with_LLM/network/members)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 </div>
 
 ---
