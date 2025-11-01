@@ -87,3 +87,7 @@ Place your CSV at data/df_final.csv or update the path in the code.
 Edit the following line in main.ipynb (or the generated script):
 
 TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE"
+
+---
+## Result
+![لوگو](E:\Project\DataFrame_Q&A_Bot_with_LLM\Screenshots\1.JPG)
