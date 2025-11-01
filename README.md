@@ -90,4 +90,4 @@ TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE"
 
 ---
 ## Result
-![لوگو](E:\Project\DataFrame_Q&A_Bot_with_LLM\Screenshots\1.JPG)
+![result 1](Screenshots/1.JPG)
