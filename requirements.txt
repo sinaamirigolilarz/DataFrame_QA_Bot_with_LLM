@@ -1,0 +1,8 @@
+python-telegram-bot==20.7
+transformers
+torch
+accelerate
+bitsandbytes
+pandas
+sentencepiece
+nest_asyncio
